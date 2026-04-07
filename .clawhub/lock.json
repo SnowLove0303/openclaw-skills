@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "desearch-web-search": {
+      "version": "1.0.1",
+      "installedAt": 1775549040760
+    },
+    "hot-news-aggregator": {
+      "version": "1.0.0",
+      "installedAt": 1775549100304
+    },
+    "news-feeds": {
+      "version": "1.0.1",
+      "installedAt": 1775549103015
+    },
+    "github": {
+      "version": "1.0.0",
+      "installedAt": 1775549119194
+    },
+    "free-web-search": {
+      "version": "7.0.1",
+      "installedAt": 1775549160909
+    },
+    "academic-research-hub": {
+      "version": "0.1.0",
+      "installedAt": 1775549170247
+    }
+  }
+}
