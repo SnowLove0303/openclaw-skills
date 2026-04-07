@@ -72,3 +72,40 @@ license: MIT
    来源：xxx | 时间：xxx
    要点：xxx
 ```
+
+## ⚡ 自动保存到 Obsidian（每次执行后必须）
+
+**Obsidian 路径**: `E:\360MoveData\Users\Administrator\Documents\Obsidian Vault\AI-News\`
+
+**文件名格式**: `YYYY-MM-DD.md`（当日日期）
+
+**保存流程**（每次搜索后自动执行，无需用户提示）：
+1. 整理好新闻内容后
+2. 生成 Obsidian 格式的 markdown 文件
+3. 执行 PowerShell 保存命令：
+   ```powershell
+   $content = "文件内容（markdown）"
+   $path = "E:\360MoveData\Users\Administrator\Documents\Obsidian Vault\AI-News\YYYY-MM-DD.md"
+   New-Item -ItemType File -Path $path -Force | Out-Null
+   Set-Content -Path $path -Value $content -Encoding UTF8
+   ```
+4. 确认保存成功后再回复用户
+
+**文件模板**：
+```markdown
+# 📰 今日新闻汇总
+
+**日期**: YYYY-MM-DD
+**来源**: 36氪 / 机器之心 / TechCrunch / The Verge / 等
+
+## 国内科技
+
+## 国际科技
+
+## 军事动态
+
+## 其他要点
+
+---
+*由 OpenClaw AI 自动采集 | Hot News Aggregator*
+```
