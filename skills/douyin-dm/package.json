@@ -1,0 +1,17 @@
+{
+  "name": "douyin-dm",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "抖音私信 AI 自动回复 Skill for OpenClaw",
+  "scripts": {
+    "start": "node scripts/dm-agent.mjs",
+    "check": "node scripts/dm-agent.mjs check",
+    "approve": "node scripts/dm-agent.mjs approve",
+    "dryrun": "node scripts/dm-agent.mjs dryrun",
+    "auto": "node scripts/dm-agent.mjs auto",
+    "status": "node scripts/dm-agent.mjs status"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0"
+  }
+}
